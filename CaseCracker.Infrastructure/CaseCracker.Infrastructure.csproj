@@ -6,4 +6,23 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\CaseCracker.Application\CaseCracker.Application.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Data\Configurations\" />
+      <Folder Include="Logging\" />
+      <Folder Include="Services\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.4" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.4">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="MySql.EntityFrameworkCore" Version="8.0.2" />
+    </ItemGroup>
+
 </Project>

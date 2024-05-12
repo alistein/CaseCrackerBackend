@@ -1,6 +1,7 @@
 namespace CaseCracker.Application.Common.Interfaces;
 
-public class IHttpUserContext
+public interface IHttpUserContext
 {
-    
+    public int CurrentUserId { get; }
+    public string? IpAddress { get; }
 }
