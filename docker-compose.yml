@@ -1,0 +1,6 @@
+﻿services:
+  casecracker.api:
+    image: casecracker.api
+    build:
+      context: .
+      dockerfile: CaseCracker.API/Dockerfile

@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaseCracker.API", "CaseCracker.API\CaseCracker.API.csproj", "{EA69E304-C1E4-4459-A8DD-69994576EC0D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9F4313F1-AEA8-4299-8BFC-4161E39A906F}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaseCracker.Application", "CaseCracker.Application\CaseCracker.Application.csproj", "{91994D29-E5C1-4F56-B0FF-1A7D3E82D7DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaseCracker.Domain", "CaseCracker.Domain\CaseCracker.Domain.csproj", "{AB22FCBD-3144-4924-B570-58ECD47B017D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaseCracker.Infrastructure", "CaseCracker.Infrastructure\CaseCracker.Infrastructure.csproj", "{34377526-FCF1-4401-B3C8-23D9698C6DF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaseCracker.Common", "CaseCracker.Common\CaseCracker.Common.csproj", "{09332548-24FD-4BDD-852E-02CBB09483AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA69E304-C1E4-4459-A8DD-69994576EC0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA69E304-C1E4-4459-A8DD-69994576EC0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA69E304-C1E4-4459-A8DD-69994576EC0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA69E304-C1E4-4459-A8DD-69994576EC0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91994D29-E5C1-4F56-B0FF-1A7D3E82D7DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91994D29-E5C1-4F56-B0FF-1A7D3E82D7DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91994D29-E5C1-4F56-B0FF-1A7D3E82D7DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91994D29-E5C1-4F56-B0FF-1A7D3E82D7DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB22FCBD-3144-4924-B570-58ECD47B017D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB22FCBD-3144-4924-B570-58ECD47B017D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB22FCBD-3144-4924-B570-58ECD47B017D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB22FCBD-3144-4924-B570-58ECD47B017D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34377526-FCF1-4401-B3C8-23D9698C6DF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34377526-FCF1-4401-B3C8-23D9698C6DF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34377526-FCF1-4401-B3C8-23D9698C6DF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34377526-FCF1-4401-B3C8-23D9698C6DF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09332548-24FD-4BDD-852E-02CBB09483AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09332548-24FD-4BDD-852E-02CBB09483AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09332548-24FD-4BDD-852E-02CBB09483AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09332548-24FD-4BDD-852E-02CBB09483AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
