@@ -1,6 +1,10 @@
+using CaseCracker.Application.Common.Behaviours;
+using CaseCracker.Application.Common.Interfaces;
 using CaseCracker.Application.Features.UserManagement.Interfaces;
 using CaseCracker.Infrastructure.Data.Context;
 using CaseCracker.Infrastructure.Data.Repositories;
+using CaseCracker.Infrastructure.Data.UoW;
+using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -14,9 +18,9 @@ public static class DependencyInjection
     {
         services.AddDbContext<ApplicationDbContext>(
             options => options.UseMySQL(configuration["DatabaseString"] ?? ""));
-
-        services.AddScoped<IUserRepository, UserRepository>();
-
+        
+        services.AddScoped<IUnitOfWork, UnitOfWork>();
+        
         return services;
     }
 }

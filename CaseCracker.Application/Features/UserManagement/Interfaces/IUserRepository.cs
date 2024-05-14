@@ -1,9 +1,9 @@
+using CaseCracker.Application.Common.Interfaces;
 using CaseCracker.Domain.Entities;
 
 namespace CaseCracker.Application.Features.UserManagement.Interfaces;
 
-public interface IUserRepository
+public interface IUserRepository : IGenericRepository<User>
 {
-    Task AddAsync(User user);
-    Task<User?> GetByIdAsync(int userId);
+    Task<User?> GetByEmailAsync(string email);
 }

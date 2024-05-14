@@ -11,4 +11,11 @@ public class UserController(IMediator mediator) : BaseController(mediator)
     {
         return Ok(await mediator.Send(request));
     }
+    
+    [HttpPut]
+    public async Task<IActionResult> UpdateUser(UpdateUserRequest request)
+    {
+        return Ok(await mediator.Send(request));
+    }
+
 }

@@ -4,17 +4,10 @@ using CaseCracker.Infrastructure.Data.Context;
 
 namespace CaseCracker.Infrastructure.Data.Repositories;
 
-public class UserRepository(ApplicationDbContext dbContext) : IUserRepository
+public class UserRepository(ApplicationDbContext dbContext) : GenericRepository<User>(dbContext), IUserRepository
 {
-    public async Task AddAsync(User user)
+    public async Task<User?> GetByEmailAsync(string email)
     {
-        await dbContext.Users.AddAsync(user);
-
-        await dbContext.SaveChangesAsync();
-    }
-
-    public async Task<User?> GetByIdAsync(int userId)
-    {
-        return await dbContext.Users.FindAsync(userId);
+        return await dbContext.Users.FindAsync(email);
     }
 }

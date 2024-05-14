@@ -11,13 +11,12 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Data\Configurations\" />
       <Folder Include="Logging\" />
       <Folder Include="Services\" />
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.4" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.5" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.4">
         <PrivateAssets>all</PrivateAssets>
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>

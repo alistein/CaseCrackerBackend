@@ -1,3 +1,4 @@
+using CaseCracker.Application.Common.Interfaces;
 using CaseCracker.Application.Features.UserManagement.Interfaces;
 using CaseCracker.Domain.Entities;
 using MediatR;
@@ -11,17 +12,17 @@ public class CreateUserRequest : IRequest<bool>
     public string Password { get; set; }
 }
 
-public class CreateUserCommand(IUserRepository userRepository) : IRequestHandler<CreateUserRequest, bool>
+public class CreateUserCommand(IUnitOfWork uow) : IRequestHandler<CreateUserRequest, bool>
 {
     public async Task<bool> Handle(CreateUserRequest request, CancellationToken cancellationToken)
     {
-        await userRepository.AddAsync(new User
+        await uow.UserRepository.AddAsync(new User
         {
             Name = request.Name,
             Email = request.Email,
             PasswordHash = request.Password
         });
-
+        
         return true;
     }
 }
