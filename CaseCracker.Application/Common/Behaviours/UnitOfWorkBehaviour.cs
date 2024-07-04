@@ -4,7 +4,7 @@ using Microsoft.Extensions.Logging;
 
 namespace CaseCracker.Application.Common.Behaviours;
 
-public class UnitOfWorkBehaviour<TRequest, TResponse>(IUnitOfWork uow, ILogger<UnitOfWorkBehaviour<TRequest,TResponse>> _logger) 
+public class UnitOfWorkBehaviour<TRequest, TResponse>(IUnitOfWork uow, ILogger<UnitOfWorkBehaviour<TRequest,TResponse>> logger) 
     : IPipelineBehavior<TRequest, TResponse>
     where TRequest : class
 {
@@ -23,7 +23,7 @@ public class UnitOfWorkBehaviour<TRequest, TResponse>(IUnitOfWork uow, ILogger<U
         }
         catch (Exception e)
         {
-            _logger.LogError(e, "An error occured on transaction.");
+            logger.LogError(e, "An error occured on transaction");
             await connection.RollbackAsync(cancellationToken);
         }
 

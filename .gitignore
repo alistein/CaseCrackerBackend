@@ -5,3 +5,5 @@ riderModule.iml
 /_ReSharper.Caches/
 .idea/
 .git/
+CaseCracker.API/appsettings.json
+CaseCracker.API/appsettings.Development.json

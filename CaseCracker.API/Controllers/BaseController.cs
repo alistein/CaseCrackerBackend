@@ -6,8 +6,8 @@ namespace CaseCracker.API.Controllers;
 
 [ApiController]
 [ValidationExceptionFormatter]
-[Route("api/v1/[controller]")]
-public class BaseController(IMediator mediator) : Controller
+[Route("/api/v1/[controller]")]
+public class BaseController : Controller
 {
-    protected readonly IMediator Mediator = mediator;
+    
 }

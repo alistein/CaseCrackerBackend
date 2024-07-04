@@ -13,12 +13,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Content Include="..\.dockerignore">
-        <Link>.dockerignore</Link>
-      </Content>
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\CaseCracker.Application\CaseCracker.Application.csproj" />
       <ProjectReference Include="..\CaseCracker.Infrastructure\CaseCracker.Infrastructure.csproj" />
     </ItemGroup>

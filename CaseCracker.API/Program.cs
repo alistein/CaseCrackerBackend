@@ -1,6 +1,6 @@
-using CaseCracker.API.Configurations;
-using CaseCracker.Application.Common.Configurations;
-using CaseCracker.Infrastructure.Configurations;
+using CaseCracker.API;
+using CaseCracker.Application;
+using CaseCracker.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,9 +10,11 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddRouting(x => x.LowercaseUrls = true);
+
 builder.Services.AddApplicationLayer();
 builder.Services.AddInfrastructureLayer(builder.Configuration);
-builder.Services.AddWebLayer();
+builder.Services.AddWebLayer(builder.Configuration);
 
 var app = builder.Build();
 

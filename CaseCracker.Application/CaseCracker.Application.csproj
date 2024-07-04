@@ -7,17 +7,28 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    </ItemGroup>
+
+    <ItemGroup>
       <ProjectReference Include="..\CaseCracker.Domain\CaseCracker.Domain.csproj" />
     </ItemGroup>
 
     <ItemGroup>
+      <PackageReference Include="AutoMapper" Version="13.0.1" />
       <PackageReference Include="FluentValidation" Version="11.9.1" />
       <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.9.1" />
       <PackageReference Include="MediatR" Version="12.2.0" />
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.5" />
+      <PackageReference Include="MongoDB.Driver" Version="2.27.0" />
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="Features\Onboardings\DTOs\" />
+      <Folder Include="Features\Onboardings\Interfaces\" />
+      <Folder Include="Features\Onboardings\Profiles\" />
+      <Folder Include="Features\Onboardings\Queries\" />
+      <Folder Include="Features\Onboardings\Validators\" />
       <Folder Include="Features\UserManagement\DTOs\" />
       <Folder Include="Features\UserManagement\Profiles\" />
       <Folder Include="Features\UserManagement\Queries\" />
